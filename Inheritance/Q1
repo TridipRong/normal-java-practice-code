@@ -1,0 +1,83 @@
+Q1)
+What is the use of ‘this’ and ‘super’ keywords in java ?explain with an example.
+=> We use "this" keywords to access methodes ,Constructure and Static member.On the other hand we can use
+"super" Keyword only when we inherits another class and we want to access Method constructor and static
+member  of that class.
+
+
+This------
+// Program to illustrate this keyword
+// is used to refer current class
+class RR {
+	// instance variable
+	int a = 10;
+
+	// static variable
+	static int b = 20;
+
+	void GFG()
+	{
+		// referring current class(i.e, class RR)
+		// instance variable(i.e, a)
+		this.a = 100;
+
+		System.out.println(a);
+
+		// referring current class(i.e, class RR)
+		// static variable(i.e, b)
+		this.b = 600;
+
+		System.out.println(b);
+	}
+
+	public static void main(String[] args)
+	{
+		// Uncomment this and see here you get
+		// Compile Time Error since cannot use
+		// 'this' in static context.
+		// this.a = 700;
+		new RR().GFG();
+	}
+}
+
+
+
+
+
+
+---------------
+
+super-----
+
+// Program to illustrate super keyword
+// refers super-class instance
+
+class Parent {
+	// instance variable
+	int a = 10;
+
+	// static variable
+	static int b = 20;
+}
+
+class Base extends Parent {
+	void rr()
+	{
+		// referring parent class(i.e, class Parent)
+		// instance variable(i.e, a)
+		System.out.println(super.a);
+
+		// referring parent class(i.e, class Parent)
+		// static variable(i.e, b)
+		System.out.println(super.b);
+	}
+
+	public static void main(String[] args)
+	{
+		// Uncomment this and see here you get
+		// Compile Time Error since cannot use 'super'
+		// in static context.
+		// super.a = 700;
+		new Base().rr();
+	}
+}

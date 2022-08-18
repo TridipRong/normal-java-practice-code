@@ -1,0 +1,5 @@
+Q4)
+Why is multiple inheritance not supported in java at class level ?
+=>Suppose there are three class class A,class B and class C. A inherits from B and C ,and
+b and c have some common Method so that time jvm is not able to decide which method to consider.
+That's the reason that java does not support multiple inheritance.

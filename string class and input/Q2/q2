@@ -1,0 +1,74 @@
+
+//    ******
+//    The String is immutable in Java because of the security,
+//    synchronization and concurrency, caching, and class
+//    loading. The reason of making string final is to destroy
+//    the immutability and to not allow others to extend it. The
+//    String objects are cached in the String pool, and it makes
+//    the String immutable.
+
+//    what is the difference between String and String Builder?
+//
+//    A String is immutable in Java, while a StringBuilder is mutable in Java.String.
+//    An immutable object is an object whose content cannot be changed after it is created.
+//    When we try to concatenate two Java strings, a new String object is created in the string pool.
+
+//    write some of the methods of String class at least 5 with example.
+//
+//    1) to Lowercase (): Converts all of the characters in this String to lower case.
+//
+//    Syntax: s1.toLowerCase()
+//
+//    Example: String s="Sachin";
+//
+//    System.out.println(s.toLowerCase());
+//
+//     Output: sachin
+//
+//    2)to Uppercase():Converts all of the characters in this String to
+//
+//    upper case
+//
+//    Syntax: s1.toUpperCase()
+//
+//    Example:
+//
+//    String s="Sachin";
+//
+//    System.out.println(s.toUpperCase());
+//
+//    Output: SACHIN
+//
+//    3) trim (): Returns a copy of the string, with leading and trailing
+//
+//    whitespace omitted.
+//
+//    Syntax: s1.trim()
+//
+//    Example:
+//
+//    String s=" Sachin ";
+//
+//    System.out.println(s.trim());
+//
+//    Output:Sachin
+//
+//    4) replace ():Returns a new string resulting from replacing all
+//
+//    occurrences of old Char in this string with new Char.
+//
+//            Syntax: s1.replace(‘x’,’y’)
+//
+//    Example:
+//
+//    String s1="Java is a programming language. Java is a platform.";
+//
+//    String s2=s1.replace("Java","Kava"); //replaces all occurrences
+//
+//    of "Java" to "Kava"
+//
+//            System.out.println(s2);
+//
+//    Output: Kava is a programming language. Kava is a platform.
+
+
